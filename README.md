@@ -9,3 +9,6 @@ IDE: Intellij IDEA with <a href=https://www.projectlombok.org/> lombok</a> which
 
 
 
+## 2、demothymeleaf
+
+It is a demo project that shows how to use the template thymeleaf.  it only shows how to get the attribute form session and model.  the way to get the parameter in the url is also included.
