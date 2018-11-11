@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+</head>
+<body>
+<h1>Thymeleaf Demo</h1>
+username:
+<text th:text="${user.username}">username</text>
+<br>
+password:
+<text th:text="${user.password}">password</text>
+
+<div>
+    <h1 th:text="${session.hello}"> session中存入的值</h1>
+    <h2 th:text="${#request.getParameter('username')}" th:unless="${#request.getParameter('username') == null}">用户名为空，默认显示</h2>
+    <h2 th:text="${#request.getParameter('password')}">request</h2>
+</div>
+</body>
+</html>
