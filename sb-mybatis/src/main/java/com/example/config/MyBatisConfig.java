@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @Author Barry
  * @date 2019/1/8
  */
-@Configuration
+//@Configuration
 public class MyBatisConfig {
 
     @Autowired

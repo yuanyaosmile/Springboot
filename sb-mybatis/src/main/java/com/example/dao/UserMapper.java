@@ -1,6 +1,7 @@
 package com.example.dao;
 
 import com.example.entity.User;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Repository;
  * @date 2019/1/8
  */
 @Repository
+@Mapper
 public interface UserMapper {
     /**
      * 查询用户

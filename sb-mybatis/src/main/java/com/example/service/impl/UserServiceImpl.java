@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
-    UserMapper userMapper = null;
+    UserMapper userMapper ;
 
     @Override
     public User findUserById(long id) {
