@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import com.example.pojo.User;
+import com.example.rabbitmq.MQSender;
 import com.example.redis.UserKey;
 import com.example.redis.service.RedisService;
 import com.example.result.Result;
@@ -22,6 +23,9 @@ public class HelloController {
     @Autowired
     RedisService redisService;
 
+    @Autowired
+    MQSender mqSender;
+
     @RequestMapping("/get")
     public Result get(){
         return Result.success("success");
@@ -30,8 +34,17 @@ public class HelloController {
     @RequestMapping("/t")
     public String gett(Model model){
         model.addAttribute("name","barry");
+        mqSender.send("barry");
         return "hello";
     }
+
+    @RequestMapping("/topic")
+   @ResponseBody
+    public Result<String> topic() {
+		mqSender.sendTopic("hello,imooc");
+        return Result.success("Hello，world");
+    }
+
 
     @RequestMapping("/user")
     @ResponseBody
@@ -58,4 +71,6 @@ public class HelloController {
         return Result.success(true);
 
     }
+
+
 }
