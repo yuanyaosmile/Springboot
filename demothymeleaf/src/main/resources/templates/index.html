@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Thymeleaf</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <h1>Thymeleaf Demo</h1>
@@ -17,5 +18,12 @@ password:
     <h2 th:text="${#request.getParameter('username')}" th:unless="${#request.getParameter('username') == null}">用户名为空，默认显示</h2>
     <h2 th:text="${#request.getParameter('password')}">request</h2>
 </div>
+
+<div>
+    <img th:src="@{/img/11.jpg}">
+</div>
+
+<div class="divcss5">背景色为红色</div>
+
 </body>
 </html>
