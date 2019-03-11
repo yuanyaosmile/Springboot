@@ -1,10 +1,12 @@
 package com.example.dao;
 
 import com.example.pojo.Product;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Mapper
 public interface ProductMapper {
     Product getProduct(Long id);
 
