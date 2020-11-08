@@ -27,4 +27,9 @@ public class UserController {
         userService.saveUser(user);
         return "save";
     }
+
+    @RequestMapping("/name")
+    public User findByName(String username){
+        return userService.findUserByName(username);
+    }
 }

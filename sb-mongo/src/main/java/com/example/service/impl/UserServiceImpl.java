@@ -27,4 +27,13 @@ public class UserServiceImpl implements UserService {
         //return mongoTemplate.findById(id,User.class);
         return mongoTemplate.findOne(query, User.class);
     }
+
+    @Override
+    public User findUserByName(String username) {
+        Criteria name = Criteria.where("username").is(username);
+        Query query = new Query(name);
+        return mongoTemplate.findOne(query, User.class);
+    }
+
+
 }
