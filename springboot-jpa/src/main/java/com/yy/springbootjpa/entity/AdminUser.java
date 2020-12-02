@@ -4,14 +4,14 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Table(name = "adminUser")
+@Table
 @Entity
 @Data
 public class AdminUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Column(name = "name")
+    @Column
     private String name;
     @Column
     private String password;
