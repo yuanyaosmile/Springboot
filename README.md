@@ -45,3 +45,7 @@ This is a web application based on spring boot 2.4.x and it also has a Dockerfil
 
 Springboot-data-jpa is also useful for handling persistence actions. and this is a demo for use it to CRUD data in MYSQL.
 
+## 9. Hello-world (spring boot  with Kafka)
+
+this is a sample for using spring boot and Kafka. the blog is [笔记系列之docker安装Kafka](https://blog.csdn.net/Apple_wolf/article/details/119977346?spm=1001.2014.3001.5501)
+
