@@ -49,3 +49,7 @@ Springboot-data-jpa is also useful for handling persistence actions. and this is
 
 this is a sample for using spring boot and Kafka. the blog is [笔记系列之docker安装Kafka](https://blog.csdn.net/Apple_wolf/article/details/119977346?spm=1001.2014.3001.5501)
 
+## 10. pg
+
+it is a sample for using Postgres with spring boot 2.7.0. the ORM is spring jpa with Hibernet. the env is produced by docker. if you want to lanch the env, please refer this blog [笔记系列之docker安装Postgresql 14](https://blog.csdn.net/Apple_wolf/article/details/125119896?spm=1001.2014.3001.5501)
+
