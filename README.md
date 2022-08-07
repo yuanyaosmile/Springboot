@@ -53,3 +53,7 @@ this is a sample for using spring boot and Kafka. the blog is [笔记系列之do
 
 it is a sample for using Postgres with spring boot 2.7.0. the ORM is spring jpa with Hibernet. the env is produced by docker. if you want to lanch the env, please refer this blog [笔记系列之docker安装Postgresql 14](https://blog.csdn.net/Apple_wolf/article/details/125119896?spm=1001.2014.3001.5501)
 
+## 11. query-dsl-java  query-dsl-kotlin
+this is samples for using query dsl with Java and kotlin. query-dsl with kotlin is a little complicated and we we need to add more configuration.
+this sample also used @IdClass
+
